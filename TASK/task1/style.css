@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(179, 183, 183);
+}
+
+.container {
+    color: #333;
+    padding: 30px;
+    width: 30%;
+    margin: auto;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 1px whitesmoke solid;
+    font-family: cursive;
+}
+
+.container:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 50px rgb(139, 250, 250);
+}
+
+h1 {
+    color: red;
+    font-family: cursive;
+    text-align: center;
+}

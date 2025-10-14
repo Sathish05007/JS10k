@@ -1,0 +1,5 @@
+alert("Hello,Welcome...!")
+var name = prompt("Enter name:")
+var age = prompt("Enter age")
+console.log(`My name is ${name} and am ${age} years old`)
+document.write(`My name is ${name} and am ${age} years old`)

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            border: 10px solid;
+            border-image: linear-gradient(to right, blue, yellow, blue) 1;
+            height: auto;
+            width: 45%;
+            margin: auto;
+            background: linear-gradient(to right, pink, #86c8e4, pink);
+        }
+        .l1 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .l1-l,
+        .l1-r {
+            width: 50%;
+        }
+        .l1-l {
+            display: flex;
+            justify-content: space-around;
+        }
+        .serial {
+            text-align: right;
+            background: white;
+            padding: 5px 12px;
+            border-radius: 10px;
+            display: inline-block;
+            height: 20px;
+            margin-top: 20px;
+        }
+        .l1-l img {
+            width: 20%;
+            height: 10vh;
+            margin-top: 17px;
+        }
+        .l1-r {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 15px;
+        }
+        .l1-r img {
+            width: 20%;
+
+        }
+        .l2{
+            text-align: center;
+        }
+        .l2 h3{
+            font-family: "Great Vibes", cursive;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .l2 p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+        }
+        .l3{
+            display: flex;
+            justify-content: space-evenly;
+            height: 20vh;
+        }
+        .l3-1,.l3-2,.l3-3{
+            width: 10%;
+        }
+        .l3-2{
+            width: 70%;
+            text-align: center;
+        }
+        .l3-2 img{
+            width: 30%;
+        }
+        .l3-2 h3{
+            margin-top: -16px;
+        }
+        .l3-2 h4{
+            margin-top: -10px;
+            text-decoration: underline black;
+        }
+        .l3-3{
+            width: 20%;
+        }
+        .l3-3 img{
+            width: 100%;
+        }
+        .l4{
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .l4 span{
+            font-weight: bold;
+        }    
+        .l5 table{
+            height: 70vh;
+           
+        }
+        .l6{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: monospace;
+            height: 20vh;
+        }
+
+        @media screen and (max-width:376px){
+            *{
+                font-size: 12px;
+            }
+            .container{
+                width: 100%;
+            }
+            .serial {
+                padding:5px 10px;
+            }
+            .l3-2 h3 {
+                margin-top: -6px;
+            }
+            .l1-l img {
+                height: 5vh;
+            }
+            .l2 h3{
+                font-size: 21px;
+            }
+            .l3-3 {
+                width: 15%;
+            }
+            .l5{
+                width: 100%;
+                font-size: 12px;
+                height: 50vh;
+            }
+            .l5 table{
+                height: 50vh;
+                border-collapse: collapse;
+                border: 2px black;
+            }
+          
+            
+        }
+
+        @media screen and (max-width:426px) and (min-width:377px) {
+            *{
+                font-size: 12px;
+            }
+            .container{
+                width: 100%;
+            }
+            .serial {
+                padding:5px 10px;
+            }
+            .l3-2 h3 {
+                margin-top: -6px;
+            }
+            .l1-l img {
+                height: 5vh;
+            }
+            .l2 h3{
+                font-size: 21px;
+            }
+            .l3-3 {
+                width: 15%;
+            }
+            .l5{
+                width: 100%;
+                font-size: 12px;
+                height: 50vh;
+            }
+            .l5 table{
+                height: 50vh;
+                border-collapse: collapse;
+                border: 2px black;
+            }
+          
+            
+        }
+
+        @media screen and (max-width:769px) and (min-width:427px) {
+            .container{
+                width: 100%;
+            }
+            .serial {
+                padding:5px 10px;
+            }
+            .l3-2 h3 {
+                margin-top: -6px;
+            }
+            .l1-l img {
+                height: 10vh;
+            }
+            .l2 h3{
+                font-size: 40px;
+            }
+            .l4{
+                font-size: 15px;
+            }
+            .l3{
+                height: 30vh;
+            }
+            .l3-3 {
+                width: 15%;
+            }
+            .l5{
+                width: 100%;
+                font-size: 15px;
+                height: 50vh;
+            }
+            .l5 table{
+                height: 50vh;
+                width: 90%;
+                margin: auto;
+                border-collapse: collapse;
+                border: 2px black;
+            }
+          
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="l1">
+            <div class="l1-l">
+                <div class="serial">Sl.No. F314920</div>
+                <img src="qr-code.png" alt="qr code">
+            </div>
+            <div class="l1-r">
+                <p>34/34020/F314920</p>
+                <img src="barcode.png" alt="bar code">
+            </div>
+        </div>
+        <div class="l2">
+            <h3>Telangana State Bord of Intermediate Education</h3>
+            <p>Vidya Bhavan,Nampally,Hyderabad - 500 001</p>
+        </div>
+        <div class="l3">
+            <div class="l3-2">
+                <img src="TSBIE-removebg-preview.png" alt="logo">
+                <h3>INTERMEDIATE</h3>
+                <h4>PASS CERTIFICATE-CUM-MEMERANDUM OF MARKS</h4>
+            </div>
+            <div class="l3-3">
+                <img src="man-in-suit-and-tie.png" alt="">
+            </div>
+        </div>
+        <div class="l4">
+            <p>This is to certify that <span>EJJAGIRI SATHISH </span></p>
+            <p>Father's Name :<span>EJJAGIRI RAJAIAH</span></p>
+            <p>MOther's Name :<span>EJJAGIRI RAJITHA</span></p>
+            <p>Registered No :<span>2034207077</span></p>
+            <p>has appeared for the Intermediate Public Examination held in <span>JUNE-2020 </span>and passed in
+                 <span>COMPARTMENTAL </span>with <span>ENGLISH </span>as the medium of instruction</p>
+        </div>
+        <div class="l5">
+            <table border="2">
+                <tr>
+                    <th rowspan="2">Subject</th>
+                    <th colspan="2">I Year</th>
+                    <th colspan="2">II Year</th>
+                </tr>
+                <tr>
+                    <th>Max Marks</th>
+                    <th>Marks Secured</th>
+                    <th>Max Marks</th>
+                    <th>Marks Secured</th>
+                </tr>
+                <tr>
+                    <td>Part-I : <b>ENGLISH</b></td>
+                    <td>100</td>
+                    <td>70*</td>
+                    <td>100</td>
+                    <td>75*</td>
+                </tr>
+                <tr>
+                      <td>Part-II : <b>TELUGU</b></td>
+                      <td>100</td>
+                      <td>91*</td>
+                      <td>100</td>
+                      <td>99*</td>
+                </tr>
+                <tr>
+                    <td>Part III :<br> <b>M-A</b> <br> <b>M-B</b> <br> <b>PHYSICS</b> <br> <b>CHEMISTRY</b> <br><b>PHY PR</b> <br> <b>CHE PR</b> <br><b>ENVIRONMENTAL EDUCATION</b> <br> <b>ETHICS AND HUMAN VALUES</b> </td>
+                    <td>75 <br> 75 <br> 60 <br> 60 </td>
+                    <td>45* <br> 45*<br> 45* <br>45* </td>
+                    <td>75 <br> 75 <br>60 <br>60 <br>30 <br>30</td>
+                    <td>45* <br>35* <br>45* <br>30* <br>28* <br>28*  <br> QUALIFIED<br>QUALIFIED</td>
+                </tr>
+                <tr>
+                    <td><b>Total Marks</b></td>
+                    <td colspan="4"><b>726*</b></td>
+                </tr>
+                <tr>
+                    <td>In Words</td>
+                    <td colspan="4"><b>*SEVEN**TWO***SIX</b></td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td colspan="4"><b>31-07-2020</b></td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div class="l6">
+            <div class="l6-l">
+                <h3>Principal</h3>
+            </div>
+            <div class="l6-r">
+                <h3>Controller of Examinations</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
