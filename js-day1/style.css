@@ -1,0 +1,154 @@
+  body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 60%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    header {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: #20294a;
+      border: 1px solid #2a3563;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #a5b0d8;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 4px 0 2px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 24px 0 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin: 14px 0 8px;
+      color: #6ea8ff;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      border: 1px solid #2a3563;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid #2a3563;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    .table th {
+      background: #182045;
+      text-align: left;
+    }
+
+    .chip {
+      display: inline-block;
+      background: #20294a;
+      border: 1px solid #2a3563;
+      border-radius: 8px;
+      padding: 2px 8px;
+      margin: 2px 6px 2px 0;
+      font-size: 12px;
+      color: #a5b0d8;
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    button {
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1b5cb8;
+    }
+
+    #output {
+      margin-top: 14px;
+      font-size: 16px;
+      color: #5bd39a;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 80%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.03);
+    }

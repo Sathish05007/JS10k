@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">JavaScript Basics</span>
+      <h1>Introduction to JavaScript</h1>
+    </header>
+
+    <div class="card">
+      <h2>What is JavaScript?</h2>
+      <p>
+        JavaScript is a lightweight, interpreted programming language used to make web pages interactive and dynamic.
+        It was created by <strong>Brendan Eich</strong> in 1995 and is one of the core technologies of the web.
+      </p>
+      <div class="card">
+      <h2>History of JavaScript</h2>
+      <p>
+        JavaScript was created by <strong>Brendan Eich</strong> in 1995 for Netscape Navigator. 
+        Initially, it had different names during development:
+      </p>
+      <ul class="centered-list">
+        <li><b>Mocha</b> -Original internal code name</li>
+        <li><b>LiveScript</b> -Renamed before release</li>
+        <li><b>JavaScript</b> -Final name for marketing reasons</li>
+      </ul>
+    </div>
+
+
+      <h3>Features</h3>
+      <ul class="centered-list">
+        <li>Lightweight and Fast</li>
+        <li>Object-Oriented</li>
+        <li>Interpreted Language</li>
+        <li>Platform Independent</li>
+        <li>Event-Driven</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Applications of JavaScript</h2>
+      <ul class="centered-list">
+        <li>Web Development</li>
+        <li>Mobile App Development (React Native)</li>
+        <li>Game Development</li>
+        <li>Server-side Programming (Node.js)</li>
+      </ul>
+    </div>
+        <!-- JS Engines Section -->
+    <div class="card">
+      <h2>JavaScript Engines</h2>
+      <p>JavaScript engines execute JS code in different browsers or platforms:</p>
+      <ul class="centered-list">
+        <li><b>V8</b> -Google Chrome & Node.js</li>
+        <li><b>SpiderMonkey</b> -Mozilla Firefox</li>
+        <li><b>Chakra</b> -Microsoft Edge (Legacy)</li>
+        <li><b>JavaScriptCore</b> -Safari</li>
+      </ul>
+      <p>Example code works in all engines:</p>
+      <pre>
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("Sathish"));
+      </pre>
+      <button id="engineBtn">Run JS Engine Example</button>
+      <div id="output"></div>
+    </div>
+  </div>
+
+
+    <div class="card">
+      <h2>Node.js Installation Steps</h2>
+      <ol>
+        <li>Visit <a href="https://nodejs.org" target="_blank">https://nodejs.org</a></li>
+        <li>Download the LTS version</li>
+        <li>Run the setup wizard (Next → Next → Finish)</li>
+        <li>Verify installation using:
+          <pre>node -v</pre>
+          <pre>npm -v</pre>
+        </li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Output Statements</h2>
+      <p><strong>console.log()</strong> -Shows message in browser console.</p>
+      <p><strong>alert()</strong> -Displays alert box.</p>
+      <p><strong>prompt()</strong> -Takes user input.</p>
+
+      <pre>
+console.log("Hello World");
+alert("Good Morning");
+prompt("Enter your name:");
+      </pre>
+
+      <button onclick="alert('This is Inline JavaScript!')">Click Me (Inline JS)</button>
+    </div>
+
+    <div class="card">
+      <h2>Including JavaScript in HTML</h2>
+      <p>There are three ways to include JS in your web page:</p>
+      <ul class="centered-list">
+        <li><b>Inline JS:</b> Inside an HTML tag.</li>
+        <li><b>Internal JS:</b> Inside &lt;script&gt; tag within the page.</li>
+        <li><b>External JS:</b> Linked via <code>&lt;script src="index.js"&gt;</code>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Internal JavaScript Example</h2>
+      <pre>
+&lt;script&gt;
+  console.log("Hello from Internal JS!");
+  alert("Welcome to JavaScript!");
+  let name = prompt("Enter your name:");
+  console.log("User name:", name);
+&lt;/script&gt;
+      </pre>
+    </div>
+      </script>
+  <!-- External JS Example -->
+    <div class="card">
+      <h2>External JavaScript Example</h2>
+      <p>External JS is written in a separate file and linked with &lt;script src="index.js"&gt;.</p>
+      <pre>
+&lt;script src="index.js"&gt;&lt;/script&gt;
+      </pre>
+      <button id="externalBtn">Click Me (External JS)</button>
+    </div>
+  </div>
+
+  <!-- Internal JavaScript -->
+  <script>
+    console.log("Hello from Internal JS!");
+    alert("Welcome to JavaScript Basics!");
+    let userName = prompt("Enter your name:");
+    console.log("User entered:", userName);
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>
