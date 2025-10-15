@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Arrays & Objects Assignments</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; }
+    h2 { font-size: 22px; margin: 20px 0 10px; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    button {
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover { background: #1b5cb8; }
+
+    code { background: #0f142b; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>JavaScript Arrays & Objects - Assignments</h1>
+
+    <!-- ARRAYS -->
+    <div class="card">
+      <h2>Arrays - Common Methods & Examples</h2>
+      <ul class="centered-list">
+        <li><b>push()</b> → Adds element at end<br>
+          <pre>
+let arr = [1,2];
+arr.push(3);
+console.log(arr); // [1,2,3]
+          </pre>
+        </li>
+        <li><b>pop()</b> → Removes last element<br>
+          <pre>
+let arr = [1,2,3];
+arr.pop();
+console.log(arr); // [1,2]
+          </pre>
+        </li>
+        <li><b>shift()</b> → Removes first element<br>
+          <pre>
+let arr = [1,2,3];
+arr.shift();
+console.log(arr); // [2,3]
+          </pre>
+        </li>
+        <li><b>unshift()</b> → Adds element at start<br>
+          <pre>
+let arr = [2,3];
+arr.unshift(1);
+console.log(arr); // [1,2,3]
+          </pre>
+        </li>
+        <li><b>concat()</b> → Combine arrays<br>
+          <pre>
+let arr1 = [1,2];
+let arr2 = [3,4];
+let arr3 = arr1.concat(arr2);
+console.log(arr3); // [1,2,3,4]
+          </pre>
+        </li>
+        <li><b>slice()</b> → Extract part of array<br>
+          <pre>
+let arr = [1,2,3,4];
+console.log(arr.slice(1,3)); // [2,3]
+          </pre>
+        </li>
+        <li><b>splice()</b> → Remove or replace elements<br>
+          <pre>
+let arr = [1,2,3,4];
+arr.splice(1,2,8,9);
+console.log(arr); // [1,8,9,4]
+          </pre>
+        </li>
+        <li><b>indexOf()</b> → Find index<br>
+          <pre>
+let arr = [1,2,3];
+console.log(arr.indexOf(2)); // 1
+          </pre>
+        </li>
+        <li><b>includes()</b> → Check existence<br>
+          <pre>
+let arr = [1,2,3];
+console.log(arr.includes(2)); // true
+          </pre>
+        </li>
+        <li><b>forEach()</b> → Loop through array<br>
+          <pre>
+let arr = [1,2,3];
+arr.forEach(el => console.log(el));
+// 1
+// 2
+// 3
+          </pre>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ARRAYS ASSIGNMENTS -->
+    <div class="card">
+      <h2>Arrays - 10 Assignment Questions</h2>
+      <ul class="centered-list">
+        <li>Create an array of numbers and print its length.</li>
+        <li>Add a number to the end of the array using <code>push()</code>.</li>
+        <li>Remove the last element using <code>pop()</code>.</li>
+        <li>Add a number to the start using <code>unshift()</code>.</li>
+        <li>Remove the first element using <code>shift()</code>.</li>
+        <li>Concatenate two arrays using <code>concat()</code>.</li>
+        <li>Slice elements from index 2 to 4 using <code>slice()</code>.</li>
+        <li>Splice the array to remove 2 elements from index 1 and add 5,6.</li>
+        <li>Find index of a number using <code>indexOf()</code>.</li>
+        <li>Use <code>forEach()</code> to print each element multiplied by 2.</li>
+      </ul>
+    </div>
+
+    <!-- OBJECTS -->
+    <div class="card">
+      <h2>Objects - Common Methods & Examples</h2>
+      <ul class="centered-list">
+        <li><b>Object.keys()</b> → Get all keys<br>
+          <pre>
+let obj = {a:1, b:2};
+console.log(Object.keys(obj)); // ["a","b"]
+          </pre>
+        </li>
+        <li><b>Object.values()</b> → Get all values<br>
+          <pre>
+console.log(Object.values(obj)); // [1,2]
+          </pre>
+        </li>
+        <li><b>Object.entries()</b> → Get key-value pairs<br>
+          <pre>
+console.log(Object.entries(obj)); // [["a",1],["b",2]]
+          </pre>
+        </li>
+        <li><b>delete</b> → Remove property<br>
+          <pre>
+delete obj.a;
+console.log(obj); // {b:2}
+          </pre>
+        </li>
+        <li><b>hasOwnProperty()</b> → Check property<br>
+          <pre>
+console.log(obj.hasOwnProperty("b")); // true
+          </pre>
+        </li>
+        <li><b>for...in</b> → Loop through keys<br>
+          <pre>
+for(let key in obj){
+  console.log(key, obj[key]);
+}
+// b 2
+          </pre>
+        </li>
+        <li><b>Object.assign()</b> → Merge objects<br>
+          <pre>
+let obj2 = {c:3};
+let merged = Object.assign(obj, obj2);
+console.log(merged); // {b:2, c:3}
+          </pre>
+        </li>
+        <li><b>JSON.stringify()</b> → Convert object to string<br>
+          <pre>
+console.log(JSON.stringify(obj)); // '{"b":2,"c":3}'
+          </pre>
+        </li>
+        <li><b>JSON.parse()</b> → Convert string to object<br>
+          <pre>
+let str = '{"x":10}';
+let parsed = JSON.parse(str);
+console.log(parsed); // {x:10}
+          </pre>
+        </li>
+        <li><b>Object.freeze()</b> → Prevent modification<br>
+          <pre>
+Object.freeze(obj);
+obj.b = 100; // ignored
+console.log(obj); // {b:2,c:3}
+          </pre>
+        </li>
+      </ul>
+    </div>
+
+    <!-- OBJECTS ASSIGNMENTS -->
+    <div class="card">
+      <h2>Objects - 10 Assignment Questions</h2>
+      <ul class="centered-list">
+        <li>Create an object with 3 properties and print all keys.</li>
+        <li>Print all values using <code>Object.values()</code>.</li>
+        <li>Convert object to string using <code>JSON.stringify()</code>.</li>
+        <li>Convert string back to object using <code>JSON.parse()</code>.</li>
+        <li>Check if a property exists using <code>hasOwnProperty()</code>.</li>
+        <li>Delete a property and print the object.</li>
+        <li>Loop through the object using <code>for...in</code>.</li>
+        <li>Merge two objects using <code>Object.assign()</code>.</li>
+        <li>Freeze the object and try modifying a property.</li>
+        <li>Get all entries (key-value pairs) using <code>Object.entries()</code>.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
