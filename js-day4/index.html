@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects </title>
+      <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; }
+    h2 { font-size: 22px; margin: 20px 0 10px; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    button {
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover { background: #1b5cb8; }
+
+    code { background: #0f142b; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+      <!-- OBJECTS -->
+    <div class="card">
+      <h2>Objects - Common Methods & Examples</h2>
+      <ul class="centered-list">
+        <li><b>Object.keys()</b> → Get all keys<br>
+          <pre>
+let obj = {a:1, b:2};
+console.log(Object.keys(obj)); // ["a","b"]
+          </pre>
+        </li>
+        <li><b>Object.values()</b> → Get all values<br>
+          <pre>
+console.log(Object.values(obj)); // [1,2]
+          </pre>
+        </li>
+        <li><b>Object.entries()</b> → Get key-value pairs<br>
+          <pre>
+console.log(Object.entries(obj)); // [["a",1],["b",2]]
+          </pre>
+        </li>
+        <li><b>delete</b> → Remove property<br>
+          <pre>
+delete obj.a;
+console.log(obj); // {b:2}
+          </pre>
+        </li>
+        <li><b>hasOwnProperty()</b> → Check property<br>
+          <pre>
+console.log(obj.hasOwnProperty("b")); // true
+          </pre>
+        </li>
+        <li><b>for...in</b> → Loop through keys<br>
+          <pre>
+for(let key in obj){
+  console.log(key, obj[key]);
+}
+// b 2
+          </pre>
+        </li>
+        <li><b>Object.assign()</b> → Merge objects<br>
+          <pre>
+let obj2 = {c:3};
+let merged = Object.assign(obj, obj2);
+console.log(merged); // {b:2, c:3}
+          </pre>
+        </li>
+        <li><b>JSON.stringify()</b> → Convert object to string<br>
+          <pre>
+console.log(JSON.stringify(obj)); // '{"b":2,"c":3}'
+          </pre>
+        </li>
+        <li><b>JSON.parse()</b> → Convert string to object<br>
+          <pre>
+let str = '{"x":10}';
+let parsed = JSON.parse(str);
+console.log(parsed); // {x:10}
+          </pre>
+        </li>
+        <li><b>Object.freeze()</b> → Prevent modification<br>
+          <pre>
+Object.freeze(obj);
+obj.b = 100; // ignored
+console.log(obj); // {b:2,c:3}
+          </pre>
+        </li>
+      </ul>
+    </div>
+
+    <!-- OBJECTS ASSIGNMENTS -->
+    <div class="card">
+      <h2>Objects - 10 Assignment Questions</h2>
+      <ul class="centered-list">
+        <li>Create an object with 3 properties and print all keys.</li>
+        <li>Print all values using <code>Object.values()</code>.</li>
+        <li>Convert object to string using <code>JSON.stringify()</code>.</li>
+        <li>Convert string back to object using <code>JSON.parse()</code>.</li>
+        <li>Check if a property exists using <code>hasOwnProperty()</code>.</li>
+        <li>Delete a property and print the object.</li>
+        <li>Loop through the object using <code>for...in</code>.</li>
+        <li>Merge two objects using <code>Object.assign()</code>.</li>
+        <li>Freeze the object and try modifying a property.</li>
+        <li>Get all entries (key-value pairs) using <code>Object.entries()</code>.</li>
+      </ul>
+    </div>
+</body>
+</html>

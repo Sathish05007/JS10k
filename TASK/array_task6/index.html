@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ol {
+            margin-bottom: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Array Exercises</h1>
+
+    <div class="section">
+        <h2>1. Array Basics</h2>
+        <ol>
+            <li>Create an array of 5 colors and print the second and last color.</li>
+            <li>Create an array of numbers and replace the first element with 100.</li>
+            <li>Create an array with mixed data types (string, number, boolean). Print the type of each element using a loop.</li>
+            <li>Create a nested array and print the inner array’s second element.</li>
+            <li>Create an array using the Array constructor and display its length.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>2. push(), pop(), shift(), unshift()</h2>
+        <ol start="6">
+            <li>Create an array of fruits and add one fruit at the end using push().</li>
+            <li>Remove the last element from the array using pop() and display the updated array.</li>
+            <li>Add two new fruits at the beginning using unshift().</li>
+            <li>Remove the first element using shift() and print the new array.</li>
+            <li>Use a combination of push() and pop() to keep only 3 elements in your array.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>3. slice() and splice()</h2>
+        <ol start="11">
+            <li>Create an array [10, 20, 30, 40, 50] and use slice() to extract [20, 30].</li>
+            <li>Using the same array, use splice() to replace 30 with 35.</li>
+            <li>Insert 25 before 30 using splice().</li>
+            <li>Remove the last two elements using splice().</li>
+            <li>Use slice() to copy the first three elements into a new array.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>4. concat(), join(), toString()</h2>
+        <ol start="16">
+            <li>Create two arrays [1,2,3] and [4,5,6] and merge them using concat().</li>
+            <li>Convert an array of names into a string separated by commas using join().</li>
+            <li>Use toString() on an array and display the output.</li>
+            <li>Merge three arrays using concat() and find the length of the new array.</li>
+            <li>Create an array of city names and join them using ' - ' as a separator.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>5. Search Methods (indexOf, lastIndexOf, includes)</h2>
+        <ol start="21">
+            <li>Create an array ['apple', 'banana', 'orange', 'banana', 'grape'] and find the first index of 'banana'.</li>
+            <li>Find the last index of 'banana' using lastIndexOf().</li>
+            <li>Check if 'mango' exists in the array using includes().</li>
+            <li>Write code to check if a specific number exists in an array, if not, push it.</li>
+            <li>Use includes() to verify if 'kiwi' is present in your fruit array and print a message accordingly.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>6. find() and findIndex()</h2>
+        <ol start="26">
+            <li>Create an array [5, 12, 8, 130, 44] and find the first number greater than 10.</li>
+            <li>Use findIndex() to locate the position of the first element greater than 50.</li>
+            <li>Find the first even number in an array using find().</li>
+            <li>Find the index of the first odd number in an array using findIndex().</li>
+            <li>Use find() to search for a string longer than 5 characters in an array of words.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>7. sort(), reverse(), copyWithin(), flat()</h2>
+        <ol start="31">
+            <li>Sort an array [5,3,8,1,2] in ascending order.</li>
+            <li>Reverse the sorted array and print it.</li>
+            <li>Use copyWithin() to copy first two elements to the end of an array [10,20,30,40,50].</li>
+            <li>Flatten a nested array ['a','b',['c','d'],['e',['f']]] using flat().</li>
+            <li>Use flat() with depth 2 to flatten ['x',['y',['z',['w']]]].</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>8. length, Destructuring & Misc</h2>
+        <ol start="36">
+            <li>Create an array of 10 numbers and print its length.</li>
+            <li>Remove the last element using pop() and print the new length.</li>
+            <li>Use array destructuring to extract first three elements into variables.</li>
+            <li>Create a constant array and modify one element (to show arrays are mutable).</li>
+            <li>Combine multiple array methods (push, splice, sort, reverse) to manipulate data dynamically.</li>
+        </ol>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
