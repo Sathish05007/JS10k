@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Spread, Destructuring & Operators</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #80b3ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    button {
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover { background: #1b5cb8; }
+
+    code { background: #0f142b; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>JavaScript Spread, Destructuring & All Operators</h1>
+
+    <!-- 1. Array Spread Operator -->
+    <div class="card">
+      <h2>1️⃣ Array Spread Operator (<code>...</code>)</h2>
+      <p>The <b>spread operator</b> (<code>...</code>) expands elements of an array. It helps to copy or merge arrays easily.</p>
+
+      <h3>🔹 Example:</h3>
+      <pre>
+const fruits = ["apple", "banana"];
+const moreFruits = ["mango", "orange"];
+const allFruits = [...fruits, ...moreFruits];
+console.log(allFruits);
+// Output: ["apple", "banana", "mango", "orange"]
+      </pre>
+
+      <h3>🧠 Assignment:</h3>
+      <ul class="centered-list">
+        <li>Create two arrays <code>nums1</code> and <code>nums2</code>. Merge them using spread.</li>
+        <li>Copy an array <code>colors</code> into a new array using spread and add one extra color.</li>
+        <li>Given two arrays <code>[1,2,3]</code> and <code>[4,5,6]</code>, create a combined array using spread.</li>
+      </ul>
+    </div>
+
+    <!-- 2. Object Spread Operator -->
+    <div class="card">
+      <h2>2️⃣ Object Spread Operator (<code>...</code>)</h2>
+      <p>Spread operator can also copy or merge objects easily.</p>
+
+      <h3>🔹 Example:</h3>
+      <pre>
+const user = { name: "Sathish", age: 23 };
+const updatedUser = { ...user, city: "Hyderabad" };
+console.log(updatedUser);
+// Output: { name: "Sathish", age: 23, city: "Hyderabad" }
+      </pre>
+
+      <h3>🧠 Assignment:</h3>
+      <ul class="centered-list">
+        <li>Create an object <code>student</code> with <code>name</code> and <code>course</code>. Copy it and add <code>college</code>.</li>
+        <li>Combine <code>{a:1,b:2}</code> and <code>{c:3,d:4}</code> using spread.</li>
+        <li>Clone an object <code>car</code> and change one property using spread.</li>
+      </ul>
+    </div>
+
+    <!-- 3. Array Destructuring -->
+    <div class="card">
+      <h2>3️⃣ Array Destructuring</h2>
+      <p>Destructuring allows you to unpack values from arrays into variables.</p>
+
+      <h3>🔹 Example:</h3>
+      <pre>
+const colors = ["red", "green", "blue"];
+const [first, second] = colors;
+console.log(first, second);
+// Output: red green
+      </pre>
+
+      <h3>🧠 Assignment:</h3>
+      <ul class="centered-list">
+        <li>Destructure the array <code>["HTML", "CSS", "JS"]</code> and print each value.</li>
+        <li>Swap two numbers using array destructuring: <code>[a,b] = [b,a]</code>.</li>
+        <li>Extract only 1st and 3rd elements from <code>[10,20,30,40]</code>.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Object Destructuring -->
+    <div class="card">
+      <h2>4️⃣ Object Destructuring</h2>
+      <p>It extracts specific properties from objects directly into variables.</p>
+
+      <h3>🔹 Example:</h3>
+      <pre>
+const person = { name: "Swaroop", course: "MERN", city: "Bangalore" };
+const { name, course } = person;
+console.log(name, course);
+// Output: Swaroop MERN
+      </pre>
+
+      <h3>🧠 Assignment:</h3>
+      <ul class="centered-list">
+        <li>Create an object <code>book</code> with <code>title</code>, <code>author</code>, <code>year</code>. Destructure and print them.</li>
+        <li>Extract only <code>name</code> and <code>age</code> from <code>{name:"Ram", age:22, city:"Hyd"}</code>.</li>
+        <li>Destructure a nested object:
+          <pre>
+const student = {
+  name: "Anil",
+  marks: { math: 85, science: 90 }
+};
+const { marks: { math, science } } = student;
+console.log(math, science);
+          </pre>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 5. All JS Operators -->
+    <div class="card">
+      <h2>5️⃣ All JavaScript Operators</h2>
+      <p>JavaScript has different types of operators to perform actions on data.</p>
+
+      <h3>🔹 Types of Operators:</h3>
+      <ul class="centered-list">
+        <li><b>Arithmetic:</b> +, -, *, /, %, ++, --</li>
+        <li><b>Assignment:</b> =, +=, -=, *=, /=, %=</li>
+        <li><b>Comparison:</b> ==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=</li>
+        <li><b>Logical:</b> &&, ||, !</li>
+        <li><b>Bitwise:</b> &, |, ^, ~, &lt;&lt;, &gt;&gt;</li>
+        <li><b>Ternary:</b> condition ? true : false</li>
+        <li><b>Type:</b> typeof, instanceof</li>
+        <li><b>Spread/Destructure:</b> ... (spread), [ ] / { } (destructure)</li>
+      </ul>
+
+      <h3>🔹 Example:</h3>
+      <pre>
+const a = 10;
+const b = 20;
+const max = a > b ? a : b;
+console.log("Max value:", max);
+// Output: Max value: 20
+      </pre>
+
+      <h3>🧠 Assignment:</h3>
+      <ul class="centered-list">
+        <li>Check if a number is even or odd using ternary operator.</li>
+        <li>Use assignment operators to update a variable’s value.</li>
+        <li>Compare two numbers using comparison operators.</li>
+        <li>Combine logical operators to check if both conditions are true.</li>
+        <li>Use <code>typeof</code> to check data types of variables.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
