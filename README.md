@@ -20,5 +20,12 @@ Welcome to my **JavaScript learning journey**! 🚀 This repository contains not
 - **Objects** are key-value pairs that allow structured storage of related data.
 - Common methods: `Object.keys()`, `Object.values()`, `Object.entries()`, `delete`, `hasOwnProperty()`, `Object.assign()`, `JSON.stringify()`, `JSON.parse()`, `Object.freeze()`
 
- 
+**Day5: JavaScript Spread, Destructuring & Operators**
+1. **Array Spread Operator** (`...`)  
+2. **Object Spread Operator** (`...`)  
+3. **Array Destructuring**  
+4. **Object Destructuring**  
+5. **All JavaScript Operators** (Arithmetic, Assignment, Comparison, Logical, Bitwise, Ternary, Type)
+
+
 **Happy Coding!** 💻✨
