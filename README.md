@@ -15,7 +15,10 @@ Welcome to my **JavaScript learning journey**! 🚀 This repository contains not
  **Day 3: Arrays and Objects**
 - **Arrays** are ordered collections of data.
 - Common methods: `push()`, `pop()`, `shift()`, `unshift()`, `concat()`, `slice()`, `splice()`, `indexOf()`, `forEach()`, `includes()`
+
+ **Day 4: Objects**
 - **Objects** are key-value pairs that allow structured storage of related data.
 - Common methods: `Object.keys()`, `Object.values()`, `Object.entries()`, `delete`, `hasOwnProperty()`, `Object.assign()`, `JSON.stringify()`, `JSON.parse()`, `Object.freeze()`
 
+ 
 **Happy Coding!** 💻✨
