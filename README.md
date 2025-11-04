@@ -20,5 +20,10 @@ Welcome to my **JavaScript learning journey**! 🚀 This repository contains not
 - **Objects** are key-value pairs that allow structured storage of related data.
 - Common methods: `Object.keys()`, `Object.values()`, `Object.entries()`, `delete`, `hasOwnProperty()`, `Object.assign()`, `JSON.stringify()`, `JSON.parse()`, `Object.freeze()`
 
+ **Day 5:Spread, Destructuring & Operators**
+ **Spread, Destructuring & Operators**: The spread operator (...) allows expanding arrays/objects, while destructuring helps extract values into variables easily. JavaScript operators (arithmetic, comparison, logical, etc.) enable performing actions and evaluations on data efficiently.
+
+ **Day 6:Strings & Methods**
+ **Strings & Methods**: Strings in JavaScript are sequences of characters used to store and manipulate text. String methods like length, toUpperCase(), toLowerCase(), slice(), substring(), and replace() help format, search, and modify text effectively.
  
 **Happy Coding!** 💻✨

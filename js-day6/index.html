@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Strings & Methods</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #8bff80ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 95%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    button {
+      background: #2d89ef;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover { background: #1b5cb8; }
+
+    code { background: #0f142b; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>JavaScript Strings & Methods</h1>
+    <p>A <b>String</b> is a sequence of characters enclosed in quotes.</p>
+
+    <div class="card">
+      <h2>String Declaration</h2>
+      <pre>
+let name1 = "Sathish"; // Double quotes
+let name2 = 'Developer'; // Single quotes
+let name3 = `JavaScript`; // Template literal
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>String Properties</h2>
+      <ul class="centered-list">
+        <li><code>.length</code> – returns length of string</li>
+      </ul>
+
+      <pre>
+let name = "JavaScript";
+console.log(name.length); // 10
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>String Methods</h2>
+
+      <h3>1. Changing Case</h3>
+      <ul class="centered-list">
+        <li><code>.toUpperCase()</code></li>
+        <li><code>.toLowerCase()</code></li>
+      </ul>
+      <pre>
+let text = "hello";
+console.log(text.toUpperCase()); // HELLO
+console.log(text.toLowerCase()); // hello
+      </pre>
+
+      <h3>2. Access Characters</h3>
+      <ul class="centered-list">
+        <li><code>str[index]</code></li>
+        <li><code>.charAt(index)</code></li>
+      </ul>
+      <pre>
+let str = "Sathish";
+console.log(str[0]); // S
+console.log(str.charAt(3)); // h
+      </pre>
+
+      <h3>3. Search Methods</h3>
+      <ul class="centered-list">
+        <li><code>.indexOf()</code></li>
+        <li><code>.lastIndexOf()</code></li>
+        <li><code>.includes()</code></li>
+      </ul>
+      <pre>
+let text = "I love JavaScript";
+console.log(text.indexOf("love")); // 2
+console.log(text.includes("Java")); // true
+      </pre>
+
+      <h3>4. Extracting Strings</h3>
+      <ul class="centered-list">
+        <li><code>.slice(start, end)</code></li>
+        <li><code>.substring(start, end)</code></li>
+        <li><code>.substr(start, length)</code> (old)</li>
+      </ul>
+      <pre>
+let str = "JavaScript";
+console.log(str.slice(0,4)); // Java
+      </pre>
+
+      <h3>5. Replace</h3>
+      <ul class="centered-list">
+        <li><code>.replace()</code></li>
+        <li><code>.replaceAll()</code></li>
+      </ul>
+      <pre>
+let text = "JS is awesome. JS is fun.";
+console.log(text.replace("JS","JavaScript"));
+console.log(text.replaceAll("JS","JavaScript"));
+      </pre>
+
+      <h3>6. Trim Spaces</h3>
+      <ul class="centered-list">
+        <li><code>.trim()</code></li>
+        <li><code>.trimStart()</code></li>
+        <li><code>.trimEnd()</code></li>
+      </ul>
+      <pre>
+let msg = "   Hello JS   ";
+console.log(msg.trim()); // "Hello JS"
+      </pre>
+
+      <h3>7. Split String</h3>
+      <ul class="centered-list">
+        <li><code>.split()</code></li>
+      </ul>
+      <pre>
+let data = "html,css,js";
+console.log(data.split(",")); // ['html','css','js']
+      </pre>
+    </div>
+
+
+    <div class="card">
+      <h3>Strings (20 Questions)</h3>
+
+<li>Print the length of a given string.</li>
+
+<li>Convert a string to uppercase and lowercase.</li>
+
+<li>Extract first 5 characters from a string</li>
+
+<li>Check if a substring exists in a string.</li>
+
+<li>Replace "JavaScript" with "JS" in a sentence.</li>
+
+<li>Count the vowels in a string.</li>
+
+<li>Count occurrences of a word in a sentence.</li>
+
+<li>Reverse a string without using reverse().</li>
+
+<li>Split a sentence into words.</li>
+
+<li>Concatenate two strings without using +.</li>
+
+<li>Convert " hello " to "hello" using trim().</li>
+
+<li>Check if a string starts with "web".</li>
+
+<li>Check if a string ends with .com.</li>
+
+<li>Find index of "code" in "I love coding".</li>
+
+<li>Extract last 3 characters from a string.</li>
+
+<li>Convert "js" to "Js" (capitalize first letter).</li>
+
+<li>Replace all "a" with "@" in a string.</li>
+
+<li>Count spaces in a string.</li>
+
+<li>Remove all spaces from a string.</li>
+
+<li>Convert "Hello World" to "hello-world".</li>
+
+    </div>
+  </div>
+</body>
+</html>
