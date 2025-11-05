@@ -31,5 +31,7 @@ Welcome to my **JavaScript learning journey**! 🚀 This repository contains not
 **Day 6:Strings & Methods:**
 Strings & Methods: Strings in JavaScript are sequences of characters used to store and manipulate text. 
 String methods like length, toUpperCase(), toLowerCase(), slice(), substring(), and replace() help format, search, and modify text effectively.
- 
+
+**Day 7: conditional statements** — if, else, else-if, nested if, ternary operator & switch case with real-time examples.
+
 **Happy Coding!** 💻✨
