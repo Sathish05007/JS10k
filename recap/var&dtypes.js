@@ -110,52 +110,52 @@
 
 //-----------------DATA TYPES-------------------
 
-var isStudent=true;
-console.log(typeof(isStudent),isStudent);
+// var isStudent=true;
+// console.log(typeof(isStudent),isStudent);
 
-var a=45;
-console.log(typeof(a),a)
+// var a=45;
+// console.log(typeof(a),a)
 
-var str="sagar";
-console.log(typeof(str),str)
+// var str="sagar";
+// console.log(typeof(str),str)
 
-var c;
-console.log(typeof(c),c)
+// var c;
+// console.log(typeof(c),c)
 
-var b=null;
-console.log(typeof(b),b)
+// var b=null;
+// console.log(typeof(b),b)
 
-var d=false;
-console.log(typeof(d),d)
-d=Number(d)
-console.log(typeof(d),d)
+// var d=false;
+// console.log(typeof(d),d)
+// d=Number(d)
+// console.log(typeof(d),d)
 
-var e="50";
-console.log(typeof(e),e);
-e=Number(e);
-console.log(typeof(e),e);
+// var e="50";
+// console.log(typeof(e),e);
+// e=Number(e);
+// console.log(typeof(e),e);
 
-console.log("10"-5);
+// console.log("10"-5);
 
-console.log("10"+5);
+// console.log("10"+5);
 
-var f='30';
-f=Number.isInteger(f)
-console.log(f)
+// var f='30';
+// f=Number.isInteger(f)
+// console.log(f)
 
-var g=BigInt(100000000000000)
-console.log(g)
+// var g=BigInt(100000000000000)
+// console.log(g)
 
-var h="true";
-console.log(typeof(h),h);
-h=Boolean(h);
-console.log(typeof(h),h);
+// var h="true";
+// console.log(typeof(h),h);
+// h=Boolean(h);
+// console.log(typeof(h),h);
 
-var b1=30;
-var a1='sagar';
-console.log(b1-a1);
+// var b1=30;
+// var a1='sagar';
+// console.log(b1-a1);
 
-var i="123abc";
-console.log(typeof(i),i);
-i=Number(i);
-console.log(typeof(i),i)
+// var i="123abc";
+// console.log(typeof(i),i);
+// i=Number(i);
+// console.log(typeof(i),i)

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript If, Else, Else If & Switch</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #8bff80ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    code { background: #0f142b; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>JavaScript If, Else, Else If & Switch</h1>
+    <p>Conditional statements are used to make decisions in JavaScript based on conditions.</p>
+
+    <!-- IF Statement -->
+    <div class="card">
+      <h2>1. if Statement</h2>
+      <p>Executes a block of code if a condition is true.</p>
+      <pre>
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are eligible to vote");
+}
+      </pre>
+    </div>
+
+    <!-- IF ELSE -->
+    <div class="card">
+      <h2>2. if...else Statement</h2>
+      <p>Runs one block if condition is true otherwise runs another.</p>
+      <pre>
+let marks = 45;
+
+if (marks >= 35) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+      </pre>
+    </div>
+
+    <!-- ELSE IF -->
+    <div class="card">
+      <h2>3. else if Statement</h2>
+      <p>Used to check multiple conditions in sequence.</p>
+      <pre>
+let score = 85;
+
+if (score >= 90) {
+  console.log("A Grade");
+} else if (score >= 75) {
+  console.log("B Grade");
+} else if (score >= 50) {
+  console.log("C Grade");
+} else {
+  console.log("Fail");
+}
+      </pre>
+    </div>
+
+    <!-- Nested IF -->
+    <div class="card">
+      <h2>4. Nested if</h2>
+      <p>if statement inside another if</p>
+      <pre>
+let user = "admin";
+let isLogged = true;
+
+if (isLogged) {
+  if (user === "admin") {
+    console.log("Welcome Admin");
+  } else {
+    console.log("Welcome User");
+  }
+}
+      </pre>
+    </div>
+
+    <!-- Ternary -->
+    <div class="card">
+      <h2>5. Ternary Operator (Short If-Else)</h2>
+      <p>Short form of if else.</p>
+      <pre>
+let age = 20;
+let message = age >= 18 ? "Adult" : "Minor";
+console.log(message);
+      </pre>
+    </div>
+
+    <!-- SWITCH -->
+    <div class="card">
+      <h2>6. switch Statement</h2>
+      <p>Used when multiple conditions are checked on same variable.</p>
+      <pre>
+let day = 3;
+
+switch(day) {
+  case 1: console.log("Monday"); break;
+  case 2: console.log("Tuesday"); break;
+  case 3: console.log("Wednesday"); break;
+  default: console.log("Invalid Day");
+}
+      </pre>
+    </div>
+
+       <div class="card assignments">
+      <h2>Assignments (20 Questions)</h2>
+      <ul>
+        <li>Check if a number is positive or negative.</li>
+        <li>Find whether a given number is even or odd.</li>
+        <li>Check if a person is eligible for a driving license (age >= 18).</li>
+        <li>Check if number is divisible by 5 and 11.</li>
+        <li>Take marks and print Grade using else-if.</li>
+        <li>Find largest of two numbers.</li>
+        <li>Find largest of three numbers.</li>
+        <li>Check leap year.</li>
+        <li>Display day name using switch case.</li>
+        <li>Check if character is vowel or consonant.</li>
+        <li>Check if user entered correct password.</li>
+        <li>Classify triangle based on sides (Equilateral/Isosceles/Scalene).</li>
+        <li>Check whether a number is in range 1 to 100.</li>
+        <li>Check traffic light color message using if-else.</li>
+        <li>Electricity bill calculation using conditions.</li>
+        <li>Print greeting based on time (morning/afternoon/night).</li>
+        <li>Check eligibility for scholarship based on marks and income.</li>
+        <li>Grade student attendance: >90 Excellent, >75 Good, >60 Average, else Poor.</li>
+        <li>Check login role: Admin/User/Guest.</li>
+        <li>Take month number and print number of days (use switch).</li>
+      </ul>
+    </div>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
