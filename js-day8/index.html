@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Loops</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #8bff80ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    ul.centered-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul.centered-list li {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 6px 0;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    ul.centered-list li:hover {
+      background: #1b2345;
+      transform: scale(1.02);
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>JavaScript Loops</h1>
+    <p>Loops help to repeat a block of code multiple times.</p>
+
+    <!-- For Loop -->
+    <div class="card">
+      <h2>1️⃣ for Loop</h2>
+      <p>Most common loop with initialization, condition & increment.</p>
+      <pre>
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+      </pre>
+    </div>
+
+    <!-- While Loop -->
+    <div class="card">
+      <h2>2️⃣ while Loop</h2>
+      <p>Runs as long as the condition is true.</p>
+      <pre>
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+      </pre>
+    </div>
+
+    <!-- do...while Loop -->
+    <div class="card">
+      <h2>3️⃣ do...while Loop</h2>
+      <p>Executes at least once even if condition is false.</p>
+      <pre>
+let n = 1;
+do {
+  console.log(n);
+  n++;
+} while (n <= 5);
+      </pre>
+    </div>
+
+    <!-- for...of Loop -->
+    <div class="card">
+      <h2>4️⃣ for...of Loop</h2>
+      <p>Used to iterate arrays / strings.</p>
+      <pre>
+let arr = ["HTML", "CSS", "JS"];
+for (let item of arr) {
+  console.log(item);
+}
+      </pre>
+    </div>
+
+    <!-- for...in Loop -->
+    <div class="card">
+      <h2>5️⃣ for...in Loop</h2>
+      <p>Used to iterate object keys.</p>
+      <pre>
+let user = {name: "Sathish", age: 22};
+
+for (let key in user) {
+  console.log(key, ":", user[key]);
+}
+      </pre>
+    </div>
+
+    <!-- Break -->
+    <div class="card">
+      <h2>6️⃣ break Statement</h2>
+      <p>Stops the loop immediately.</p>
+      <pre>
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+// Output: 1, 2
+      </pre>
+    </div>
+
+    <!-- Continue -->
+    <div class="card">
+      <h2>7️⃣ continue Statement</h2>
+      <p>Skips the current iteration.</p>
+      <pre>
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+// Output: 1, 2, 4, 5
+      </pre>
+    </div>
+<div class="card">
+<h2>Assignment Questions (20)</h2>
+<ul>
+<li>Print numbers from 1 to 50 using a for loop.</li>
+<li>Print even numbers from 1 to 100.</li>
+<li>Print odd numbers from 1 to 100.</li>
+<li>Print numbers from 10 to 1 (reverse).</li>
+<li>Print multiplication table of a number.</li>
+<li>Print sum of first 50 natural numbers.</li>
+<li>Find factorial of a number.</li>
+<li>Count digits in a number.</li>
+<li>Reverse a number.</li>
+<li>Print characters of a string using loop.</li>
+<li>Count vowels in a string.</li>
+<li>Print array elements using for...of.</li>
+<li>Print array indexes & values using for...in.</li>
+<li>Find largest number in an array.</li>
+<li>Print only positive numbers from array.</li>
+<li>Print 1 to 20 except 10 using continue.</li>
+<li>Stop printing when 15 is reached using break.</li>
+<li>Print star pattern.</li>
+<li>Print Fibonacci series up to 10 terms.</li>
+<li>Check prime number using loop.</li>
+</ul>
+</div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

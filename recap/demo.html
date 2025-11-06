@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Interview Questions</title>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #eef2f6;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ff3b3b;
+        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    details {
+        background: white;
+        margin-bottom: 12px;
+        padding: 16px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-in-out;
+        border-left: 4px solid #ff3b3b;
+    }
+
+    details:hover {
+        transform: scale(1.01);
+    }
+
+    summary {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff3b3b;
+        cursor: pointer;
+        outline: none;
+    }
+
+    summary::marker {
+        color: #222;
+    }
+
+    ol, ul {
+        margin-left: 18px;
+        line-height: 1.6;
+    }
+
+    li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    @media(max-width: 600px) {
+        h1 { font-size: 26px; }
+        details { padding: 12px; }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>JavaScript Interview Questions</h1>
+
+<div class="container">
+
+<details>
+    <summary>Variables (20 Questions)</summary>
+    <ol>
+        <li>Print your name using a variable.</li>
+        <li>Explain var, let, const with examples.</li>
+        <li>Swap two numbers without third variable.</li>
+        <li>Swap two numbers using third variable.</li>
+        <li>Convert a number to string.</li>
+        <li>Convert a string to number.</li>
+        <li>What happens if you change const value?</li>
+        <li>Declare multiple variables in one line.</li>
+        <li>Write an invalid variable name & observe error.</li>
+        <li>Check type using typeof.</li>
+        <li>Global variable usage inside function.</li>
+        <li>Local variable — try accessing outside function.</li>
+        <li>Difference: undefined vs null.</li>
+        <li>Use template literals for printing age.</li>
+        <li>Increment value using += operator.</li>
+        <li>Calculate total = price * quantity.</li>
+        <li>Use $ and _ in variable name.</li>
+        <li>Shadowing global variable inside function.</li>
+        <li>Demonstrate var hoisting.</li>
+        <li>Show error when using let/const before declaration.</li>
+    </ol>
+</details>
+
+
+<details>
+<summary>Data Types (20 Questions)</summary>
+<ol>
+    <li>Find type of Boolean, Number, String.</li>
+    <li>Type of null vs type of undefined.</li>
+    <li>Convert boolean to number.</li>
+    <li>Convert string "50" to number.</li>
+    <li>Convert decimal to integer.</li>
+    <li>Convert number to boolean.</li>
+    <li>Output of "10" - 5?</li>
+    <li>Output of "10" + 5?</li>
+    <li>Check integer using Number.isInteger().</li>
+    <li>Create BigInt value.</li>
+    <li>Convert string "true" to boolean.</li>
+    <li>Check if value is NaN.</li>
+    <li>Convert "123abc" to number — result?</li>
+    <li>Difference: primitive vs reference.</li>
+    <li>Copy primitive — original unchanged.</li>
+    <li>Copy object reference — changes reflect.</li>
+    <li>typeof null — why weird?</li>
+    <li>Convert number to string using toString().</li>
+    <li>Convert number to string using template literal.</li>
+    <li>Check if array using Array.isArray().</li>
+</ol>
+</details>
+
+
+<details>
+<summary>Operators (20 Questions)</summary>
+<ol>
+    <li>Perform +, −, *, /.</li>
+    <li>Find modulus.</li>
+    <li>Use exponent **.</li>
+    <li>Pre-increment vs post-increment.</li>
+    <li>Difference: == vs ===.</li>
+    <li>Use != & !==.</li>
+    <li>Logical AND example.</li>
+    <li>Logical OR example.</li>
+    <li>Logical NOT example.</li>
+    <li>Check age > 18 using ternary.</li>
+    <li>Use +=, -=, *=, /=.</li>
+    <li>Find 7 % 3.</li>
+    <li>Use ?? operator.</li>
+    <li>Optional chaining ?. example.</li>
+    <li>2 + 3 * 4 result?</li>
+    <li>"5" + 2 output?</li>
+    <li>"5" * 2 output?</li>
+    <li>typeof true, 5, "hi".</li>
+    <li>Bitwise AND & OR.</li>
+</ol>
+</details>
+
+
+<details>
+<summary>Arrays (20 Questions)</summary>
+<ol>
+    <li>Create array & print first element.</li>
+    <li>Find array length.</li>
+    <li>Add element at end (push).</li>
+    <li>Remove last element (pop).</li>
+    <li>Add element at start (unshift).</li>
+    <li>Remove first element (shift).</li>
+    <li>Reverse array.</li>
+    <li>Sort array.</li>
+    <li>Convert array to string (join).</li>
+    <li>Convert string to array.</li>
+    <li>Check if value is array.</li>
+    <li>Find index of element.</li>
+    <li>Remove using splice.</li>
+    <li>Slice sub-array.</li>
+    <li>Map: multiply by 2.</li>
+    <li>Filter odd numbers.</li>
+    <li>Reduce to sum.</li>
+    <li>Loop through array.</li>
+    <li>forEach loop.</li>
+    <li>Find max in array.</li>
+</ol>
+</details>
+
+
+<details>
+<summary>Objects (20 Questions)</summary>
+<ol>
+    <li>Create object with name & age.</li>
+    <li>Access keys (dot & bracket).</li>
+    <li>Add new property.</li>
+    <li>Delete property.</li>
+    <li>Update value.</li>
+    <li>Loop using for-in.</li>
+    <li>Check key exists (in).</li>
+    <li>Object.keys()</li>
+    <li>Object.values()</li>
+    <li>Freeze object & modify.</li>
+    <li>Compare objects.</li>
+    <li>Nested object — access inner.</li>
+    <li>Object with array property.</li>
+    <li>Method inside object.</li>
+    <li>Copy using spread.</li>
+    <li>Merge 2 objects.</li>
+    <li>Convert to JSON.</li>
+    <li>Convert JSON to object.</li>
+    <li>Count object keys.</li>
+    <li>Destructure object.</li>
+</ol>
+</details>
+
+
+<details >
+<summary >Strings (20 Questions)</summary>
+<ol>
+    <li>Print length.</li>
+    <li>Access char by index.</li>
+    <li>Uppercase string.</li>
+    <li>Lowercase string.</li>
+    <li>Trim spaces.</li>
+    <li>Replace text.</li>
+    <li>Replace all occurrences.</li>
+    <li>Split string.</li>
+    <li>Join array to string.</li>
+    <li>Check substring.</li>
+    <li>Slice.</li>
+    <li>Substring.</li>
+    <li>Reverse string.</li>
+    <li>Count vowels.</li>
+    <li>Check palindrome.</li>
+    <li>Find first & last occurrence.</li>
+    <li>Remove spaces.</li>
+    <li>String → number.</li>
+    <li>Template literal example.</li>
+    <li>Compare alphabetically.</li>
+</ol>
+</details>
+
+
+<details>
+<summary>Functions (20 Questions)</summary>
+<ol>
+    <li>Create a function.</li>
+    <li>Function with return.</li>
+    <li>Function with parameters.</li>
+    <li>Default parameter.</li>
+    <li>Arrow function sum.</li>
+    <li>Anonymous function.</li>
+    <li>IIFE example.</li>
+    <li>Even or odd.</li>
+    <li>Factorial.</li>
+    <li>Reverse string.</li>
+    <li>Count vowels.</li>
+    <li>Max in array.</li>
+    <li>Function returns object.</li>
+    <li>Function inside object.</li>
+    <li>Spread operator in args.</li>
+    <li>Rest operator example.</li>
+    <li>Callback function.</li>
+    <li>Prime number.</li>
+    <li>Pass function as argument.</li>
+    <li>Recursion example.</li>
+</ol>
+</details>
+
+
+<details>
+<summary>Conditions (20 Questions)</summary>
+<ol>
+    <li>Check positive number.</li>
+    <li>Even or odd.</li>
+    <li>Voting eligibility.</li>
+    <li>Largest of two.</li>
+    <li>Largest of three.</li>
+    <li>Vowel or consonant.</li>
+    <li>Grade system.</li>
+    <li>Leap year.</li>
+    <li>Divisible by 5 & 11.</li>
+    <li>Alphabet / digit / symbol.</li>
+    <li>Electricity bill.</li>
+    <li>Simple calculator (switch).</li>
+    <li>Days in month.</li>
+    <li>Uppercase or lowercase.</li>
+    <li>Traffic light logic.</li>
+    <li>Login check.</li>
+    <li>Weather message.</li>
+    <li>Nested if.</li>
+    <li>Ternary age check.</li>
+    <li>Compare strings.</li>
+</ol>
+</details>
+
+
+<details open>
+<summary>Loops (20 Questions)</summary>
+<ol>
+    <li>Print 1-100.</li>
+    <li>Print even 1-50.</li>
+    <li>Reverse numbers.</li>
+    <li>Sum 1-100.</li>
+    <li>Factorial.</li>
+    <li>Fibonacci series.</li>
+    <li>Multiplication table.</li>
+    <li>Count digits.</li>
+    <li>Reverse number.</li>
+    <li>Prime check.</li>
+    <li>Star pyramid.</li>
+    <li>Star triangle.</li>
+    <li>Loop array.</li>
+    <li>Loop string.</li>
+    <li>Largest in array.</li>
+    <li>Smallest in array.</li>
+    <li>Count vowels.</li>
+    <li>Break example.</li>
+    <li>Continue example.</li>
+    <li>Nested loop pattern.</li>
+</ol>
+</details>
+
+</div>
+
+
+    <script src="var&dtypes.js"></script>
+    <script src="./operators.js"></script>
+    <script src="./array.js"></script>
+    <script src="./object.js"></script>
+    <script src="./string.js"></script>
+    <script src="./function.js"></script>
+    <script src="./conditions.js"></script>
+    <script src="./loops.js"></script>
+</body>
+</html>
