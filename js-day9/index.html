@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Functions</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #8bff80ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>JavaScript Functions</h1>
+    <p>A function is a block of reusable code that performs a task.</p>
+
+    <div class="card">
+      <h2>1️⃣ Function Declaration</h2>
+      <p>Normal function with a name.</p>
+      <pre>
+function greet() {
+  console.log("Hello, Sathish!");
+}
+greet();
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>2️⃣ Function with Parameters</h2>
+      <pre>
+function add(a, b) {
+  console.log(a + b);
+}
+add(10, 20);
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>3️⃣ Return Statement</h2>
+      <pre>
+function multiply(x, y) {
+  return x * y;
+}
+let result = multiply(4, 5);
+console.log(result);
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>4️⃣ Function Expression</h2>
+      <p>Function stored in a variable.</p>
+      <pre>
+const sayHi = function() {
+  console.log("Hi!");
+};
+sayHi();
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>5️⃣ Arrow Function (ES6)</h2>
+      <pre>
+const square = (n) => n * n;
+console.log(square(6));
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>6️⃣ Default Parameters</h2>
+      <pre>
+function welcome(name = "User") {
+  console.log("Welcome " + name);
+}
+welcome();     
+welcome("Sathish");
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>7️⃣ Rest Parameters (...args)</h2>
+      <pre>
+function sum(...nums) {
+  return nums.reduce((a,b) => a+b);
+}
+console.log(sum(1,2,3,4));
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>8️⃣ Anonymous Function</h2>
+      <pre>
+setTimeout(function() {
+  console.log("Hello after 2 seconds");
+}, 2000);
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>9️⃣ Callback Function</h2>
+      <pre>
+function greet(name) {
+  console.log("Hello " + name);
+}
+
+function processUserInput(callback) {
+  callback("Sathish");
+}
+
+processUserInput(greet);
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>🔟 IIFE (Immediately Invoked Function Expression)</h2>
+      <pre>
+(function() {
+  console.log("IIFE Running!");
+})();
+      </pre>
+    </div>
+<div class="card">
+<h2>Assignment Questions (20)</h2>
+<ul>
+<li>Write a function to find the sum of two numbers.</li>
+<li>Write a function to check whether a number is even or odd.</li>
+<li>Write a function to return the largest of three numbers.</li>
+<li>Write a function to calculate the factorial of a given number.</li>
+<li>Write a function to reverse a given string.</li>
+<li>Write a function to check if a string is a palindrome.</li>
+<li>Write a function to count the number of vowels in a string.</li>
+<li>Write a function to find the square of a number.</li>
+<li>Write a function to convert Celsius to Fahrenheit.</li>
+<li>Write a function to find the maximum element in an array.</li>
+<li>Write a function that returns the sum of all elements in an array.</li>
+<li>Write a function to find whether a given number is prime or not.</li>
+<li>Write a function that returns the average of numbers in an array.</li>
+<li>Write a function to generate a random number between 1 and 100.</li>
+<li>Write a function to check if a given year is a leap year.</li>
+<li>Write a function that takes a string and returns it in uppercase.</li>
+<li>Write a function that takes a string and returns it with the first letter of each word capitalized.</li>
+<li>Write a function that takes two numbers and returns their greatest common divisor (GCD).</li>
+<li>Write a function that accepts an array and returns only the even numbers.</li>
+<li>Write a function that takes a number and returns the sum of its digits.</li>
+</ul>  
+</div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
