@@ -42,4 +42,9 @@ Learned functions, parameters, returns, default args, anonymous & arrow function
 Built reusable programs & practiced function-based problem-solving with real-time examples.
 
 
+**Day 10 — JavaScript Hoisting,Scopes in JavaScript,Math & Number Methods**
+Explored hoisting behavior of var, let, const, and function declarations in JavaScript.
+Learned global, block, and function scope with lexical scope and scope chain concepts.
+Explored Math and Number methods — round, ceil, floor, random, parseInt, toFixed, etc.
+
 **Happy Coding!** 💻✨
