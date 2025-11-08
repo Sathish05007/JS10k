@@ -37,6 +37,9 @@ String methods like length, toUpperCase(), toLowerCase(), slice(), substring(), 
 **Day 8: Practiced all types of loops** 
  for, while, do-while, nested loops & for-of/for-in in JavaScript.
 
+**Day 9 — Functions in JavaScript**
+Learned functions, parameters, returns, default args, anonymous & arrow functions in JS.
+Built reusable programs & practiced function-based problem-solving with real-time examples.
 
 
 **Happy Coding!** 💻✨
