@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Methods Practice</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #e7ecff;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 80%;
+      margin: auto;
+      padding: 28px;
+    }
+
+    h1 { font-size: 28px; margin: 16px 0 12px; color: #8bff80ff; }
+    h2 { font-size: 22px; margin: 20px 0 10px; color: #a4c8ff; }
+    h3 { font-size: 18px; margin: 14px 0 8px; color: #6ea8ff; }
+    p { margin: 8px 0; }
+
+    .card {
+      background: #121832;
+      border: 1px solid #2a3563;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    pre {
+      background: #0f142b;
+      border: 1px solid #2a3563;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>📘 JavaScript Math Methods</h1>
+    <div class="card">
+      <pre>
+// Math.abs(): returns the absolute (positive) value
+var a = -12;
+console.log("Without Math:", a);
+console.log("With Math.abs:", Math.abs(a));
+
+// Math.round(): rounds to the nearest integer
+var b = 22.256;
+console.log("Without round:", b);
+console.log("With Math.round:", Math.round(b));
+
+// Math.ceil(): rounds up
+console.log("With Math.ceil:", Math.ceil(b));
+
+// Math.floor(): rounds down
+console.log("With Math.floor:", Math.floor(b));
+
+// Math.trunc(): removes decimal part
+console.log("With Math.trunc:", Math.trunc(b));
+
+// Math.min(): finds smallest number
+console.log("Min:", Math.min(12, 16, 88, 99));
+
+// Math.max(): finds largest number
+console.log("Max:", Math.max(12, 16, 88, 99));
+
+// Math.sqrt(): square root
+var c = 25;
+console.log("Sqrt:", Math.sqrt(c));
+
+// Math.pow(): power (base^exponent)
+var base = 2, power = 4;
+console.log("Power:", Math.pow(base, power));
+
+// Math.random(): random number between 0–1
+console.log("Random numbers:");
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+      </pre>
+    </div>
+
+    <h2>🧩 Math Methods Assignments (10 Questions)</h2>
+    <div class="card">
+      <ol>
+        <li>Find the absolute value of <code>-45</code>.</li>
+        <li>Round <code>12.78</code> to the nearest whole number.</li>
+        <li>Use <code>Math.ceil()</code> to round up <code>9.23</code>.</li>
+        <li>Use <code>Math.floor()</code> to round down <code>6.99</code>.</li>
+        <li>Use <code>Math.trunc()</code> to remove the decimal part of <code>8.765</code>.</li>
+        <li>Find the minimum value from <code>5, 10, -2, 99, 0</code>.</li>
+        <li>Find the maximum value from <code>23, 89, 12, 78</code>.</li>
+        <li>Find the square root of <code>81</code>.</li>
+        <li>Find <code>3</code> raised to the power of <code>5</code>.</li>
+        <li>Generate 3 random numbers between <code>0</code> and <code>100</code>.</li>
+      </ol>
+    </div>
+
+    <h1>🔢 Number Methods</h1>
+    <div class="card">
+      <pre>
+// toFixed(): rounds a number to fixed decimals
+var num = 566.988765;
+console.log("Original:", num);
+console.log("toFixed(3):", num.toFixed(3));
+console.log("toFixed():", num.toFixed());
+console.log("toFixed(10):", num.toFixed(10));
+
+// parseInt(): converts string to integer
+console.log(parseInt("45.67"));
+
+// parseFloat(): converts string to decimal
+console.log(parseFloat("45.67"));
+
+// toPrecision(): formats number to given length
+console.log(num.toPrecision(5));
+
+// Number.isInteger(): checks if value is integer
+console.log(Number.isInteger(12.5));
+console.log(Number.isInteger(12));
+
+// Number.isNaN(): checks if value is NaN
+console.log(Number.isNaN("Hello" - 2));
+
+// Number.isFinite(): checks if value is finite number
+console.log(Number.isFinite(10 / 2));
+console.log(Number.isFinite(Infinity));
+      </pre>
+    </div>
+
+    <h2>🧮 Number Methods Assignments (10 Questions)</h2>
+    <div class="card">
+      <ol>
+        <li>Round <code>23.5678</code> to 2 decimal places using <code>toFixed()</code>.</li>
+        <li>Convert the string <code>"123.45"</code> into a number using <code>parseFloat()</code>.</li>
+        <li>Convert <code>"50px"</code> into an integer using <code>parseInt()</code>.</li>
+        <li>Check whether <code>25.0</code> is an integer.</li>
+        <li>Format <code>12345.6789</code> to 4 total digits using <code>toPrecision()</code>.</li>
+        <li>Check if <code>"hello"</code> is NaN.</li>
+        <li>Check if <code>Infinity</code> is finite.</li>
+        <li>Find if <code>99</code> is an integer or not.</li>
+        <li>Convert <code>"200.99"</code> into both integer and float.</li>
+        <li>Try <code>toFixed(0)</code> and <code>toFixed(5)</code> on <code>3.14159</code>.</li>
+      </ol>
+    </div>
+
+    <h1>🧠 Scope in JavaScript</h1>
+    <div class="card">
+      <pre>
+// Global Scope
+var a = 20;
+function sum() {
+  console.log("Inside function:", a);
+  if (true) {
+    console.log("Inside block:", a);
+  }
+}
+sum();
+console.log("Outside function:", a);
+
+// Block Scope
+if (true) {
+  let x = 22;
+  console.log("Inside block:", x);
+}
+// console.log(x); // Error if uncommented
+
+// Lexical Scope Example
+function add(a, b, c) {
+  if (a === 13) return 0;
+  else if (b === 13) return a;
+  else if (a === 13 || b === 13 || c === 13) return "can't do anything";
+  else return a + b + c;
+}
+console.log("All below 13:", add(1, 2, 3));
+console.log("a=13:", add(13, 2, 3));
+console.log("b=13:", add(1, 13, 3));
+console.log("c=13:", add(1, 2, 13));
+      </pre>
+    </div>
+
+    <h1>🚀 Hoisting in JavaScript</h1>
+    <div class="card">
+      <pre>
+// Variable Hoisting with var
+console.log(place); // undefined
+var place = "Hyderabad";
+console.log(place);
+
+// let and const hoisting (ReferenceError)
+// console.log(name); // Error
+// let name = "Sathish";
+
+// Function Hoisting
+add(20, 30);
+function add(a, b) {
+  console.log("Sum:", a + b);
+}
+      </pre>
+    </div>
+  </div>
+  <script src="./math_methodes.js"></script>
+  <script src="./number_methodes.js"></script>
+</body>
+</html>
